@@ -5,7 +5,11 @@ if exists("syntax_on")
   syntax reset
 endif
 
-#used to allow to set the right theme from vimrc
+#Pour trouver les bons token
+# help highlight-groups
+#
+#
+#utile pour que vim mettent le bon theme depuis le vimrc
 g:colors_name = "rainbow"
 
 #
@@ -20,8 +24,9 @@ var blue =  '#40BCD8'
 var violet = '#9933CC'
 var white = '#F5FAFF'
 var grey = '#333333'
+var black = "#000000"
 
-# Utility function
+# Fonction pour appliquer le thème
 def ConfigureNormalText()
   exe "highlight Normal guibg=" .. background .. " guifg=" ..  foreground
 enddef
@@ -34,6 +39,11 @@ def SetColor(token: string, color: string)
   exe  "highlight " .. token .. " guifg=" .. color
 enddef
 
+def SetColorAndBack(token: string, color: string, colorBack: string)
+  exe  "highlight " .. token .. " guifg=" .. color .. " guibg=" .. colorBack
+enddef
+
+
 def SetColorBold(token: string, color: string)
   exe  "highlight " .. token .. " guifg=" .. color .. " cterm=bold"
 enddef
@@ -43,7 +53,6 @@ def SetColorBg(token: string, color: string)
 enddef
 
 
-#Main function to set color
 def ApplyTheme()
 ConfigureNormalText()
 ConfigureCursorLine()
@@ -66,8 +75,11 @@ SetColor("Type", red)
 SetColor("Special", orange)
 SetColor("Regexp", green)
 SetColor("VimUserFunc", white)
-
-
+SetColor("netrwDir", orange)
+SetColorAndBack("Pmenu", orange, black)
+SetColorAndBack("PmenuSel", blue, black)
+SetColor("PmenuSbar", red)
+SetColor("StatusLine", orange)
 # Python
 SetColorBold('pythonInclude', orange)
 SetColor('pythonComment', violet)
@@ -96,7 +108,9 @@ SetColorBold('markdownH6', violet)
 SetColor('markdownCodeBlock', orange)
 SetColor('markdownLinkText', blue)
 SetColor('markdownUrl', green)
-
+SetColorBold('markdownListMarker', yellow)
+SetColor('markdownCode', orange)
+SetColorBold('markdownBold', white)
 #HCL
 SetColor('hclBlockType', red)
 SetColor('hclAttributeName', orange)
@@ -105,7 +119,15 @@ SetColor('hclAttributeName', orange)
 SetColorBold('yamlBlockMappingKey', red)
 #HTML
 SetColor('htmlString', yellow)
+
+#Asciidoc
+SetColor('asciidocOneLineTitle', red)
+SetColor('asciidocListingBlock', orange)
+SetColorBold('asciidocListBullet', yellow)
 enddef
 
-# Apply colors
+#StatusLine
+SetColorBg('User1', red)
+SetColorAndBack('User2', background, orange)
+# Appliquer le thème
 ApplyTheme()

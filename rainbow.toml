@@ -1,0 +1,63 @@
+"ui.selection" = {fg="dark",bg="orange"}
+"ui.background" = {bg="dark"}
+"ui.text" = "light"
+"ui.cursor" = {fg="dark", bg ="light"}
+"ui.cursor.match" = {fg="orange", bg= "grey"}
+"ui.linenr" = "white"
+"ui.linenr.selected" = "orange"
+"ui.statusline" = {fg="dark" , bg="orange"}
+"ui.statusline.inactive" = {fg="grey" , bg="dark"}
+"ui.statusline.normal" = {fg="grey", bg="blue"}
+"ui.statusline.insert" = {fg="grey", bg="orange"}
+"ui.statusline.select" = {fg="grey", bg="yellow"}
+"ui.cursorline.primary" = {fg="light",bg="grey"}
+"ui.virtual.indent-guide" = "lightgrey"
+
+warning="orange"
+"hint" = "blue"
+"info" = "green"
+"error" = "red"
+"diagnostic" = { underline = { style = "line" } }
+"diagnostic.hint" = { underline = { color = "blue", style = "dotted" } }
+"diagnostic.info" = { underline = { color = "green", style = "dotted" } }
+"diagnostic.warning" = { underline = { color = "orange", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+##For syntax highlighting
+"string" = {fg="yellow", modifiers = ["bold"]}
+"keyword" = "red"
+"attributes" = "orange"
+"comment" = "violet"
+"operator" = "white"
+"type" = "orange"
+"variable.other.member" = "orange"
+"variable" = "orange"
+"function" = "green"
+
+"markup.heading.marker" = "grey"
+"markup.heading.1" = { fg = "red", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "orange", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "yellow", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "green", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "blue", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "violet", modifiers = ["bold"] }
+"markup.list" = "red"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link.url" = { fg = "orange", modifiers = ["underlined"] }
+"markup.link.text" = "purple"
+"markup.quote" = "grey"
+"markup.raw" = "green"
+
+[palette]
+"dark" = "#1c1c1c"
+"light" = "#F5FAFF"
+"red" = "#ED0033"
+"orange" = "#FF6600"
+"yellow" = '#FFCC00'
+"green" = '#087F8C'
+"blue" =  '#40BCD8'
+"violet" = '#9933CC'
+"white" = '#F5FAFF'
+"grey" = '#333333'
+"black" = "#000000"
+"lightgrey" = "#666666"

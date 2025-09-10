@@ -7,12 +7,15 @@
 "ui.linenr.selected" = "orange"
 "ui.statusline" = {fg="dark" , bg="orange"}
 "ui.statusline.inactive" = {fg="grey" , bg="dark"}
-"ui.statusline.normal" = {fg="grey", bg="blue"}
-"ui.statusline.insert" = {fg="grey", bg="orange"}
+"ui.statusline.normal" = {fg="grey", bg="blue" , modifiers =["bold"]}
+"ui.statusline.insert" = {fg="grey", bg="yellow", modifiers=["bold"]}
 "ui.statusline.select" = {fg="grey", bg="yellow"}
 "ui.cursorline.primary" = {fg="light",bg="grey"}
 "ui.virtual.indent-guide" = "lightgrey"
-
+"ui.highlight" = {fg="light", bg="grey"}
+"ui.menu.selected" = {bg="grey"}
+"ui.bufferline" = {"bg"="dark" , fg="lightgrey"}
+"ui.bufferline.active" = {bg="orange", fg="white", modifiers=["bold"]}
 warning="orange"
 "hint" = "blue"
 "info" = "green"
@@ -48,6 +51,9 @@ warning="orange"
 "markup.quote" = "grey"
 "markup.raw" = "green"
 
+"diff.plus.gutter" = "green"
+"diff.minus.gutter" = "red"
+"diff.delta" = "yellow"
 [palette]
 "dark" = "#1c1c1c"
 "light" = "#F5FAFF"

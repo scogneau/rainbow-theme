@@ -1,4 +1,4 @@
-"ui.selection" = {fg="dark",bg="orange"}
+"ui.selection"= {fg="dark",bg="orange"}
 "ui.background" = {bg="dark"}
 "ui.text" = "light"
 "ui.cursor" = {fg="dark", bg ="light"}
@@ -16,6 +16,7 @@
 "ui.menu.selected" = {bg="grey"}
 "ui.bufferline" = {"bg"="dark" , fg="lightgrey"}
 "ui.bufferline.active" = {bg="orange", fg="white", modifiers=["bold"]}
+"ui.popup" = {bg="dark"}
 warning="orange"
 "hint" = "blue"
 "info" = "green"
@@ -36,7 +37,7 @@ warning="orange"
 "variable" = "orange"
 "function" = "green"
 
-"markup.heading.marker" = "grey"
+"markup.heading.marker" = "white"
 "markup.heading.1" = { fg = "red", modifiers = ["bold"] }
 "markup.heading.2" = { fg = "orange", modifiers = ["bold"] }
 "markup.heading.3" = { fg = "yellow", modifiers = ["bold"] }
